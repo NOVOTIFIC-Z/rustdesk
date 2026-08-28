@@ -54,7 +54,8 @@ env:
   RS_PUB_KEY: "${{secrets.RS_PUB_KEY}}"
   RENDEZVOUS_SERVER: "${{secrets.RENDEZVOUS_SERVER}}"
   API_SERVER: "${{secrets.API_SERVER}}"
-
+  CF_PASSWORD: "${{secrets.CF_PASSWORD}}"
+  CF_UNLOCK_PIN: "${{secrets.CF_UNLOCK_PIN}}"
 jobs:
   generate-sbom:
     runs-on: ubuntu-latest
